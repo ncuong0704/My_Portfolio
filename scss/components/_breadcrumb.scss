@@ -1,0 +1,36 @@
+.breadcrumb {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 100%;
+    font-size: 15px;
+    & li {
+        @include mobile {
+            font-size: 12px;
+        }
+        &:not(:last-child) {
+            display: flex;
+            align-items: center;
+            &::after {
+                content: "\f105";
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                margin: 0 13px;
+                font-size: 12px;
+            }
+        }
+        a {
+            color: $black-color;
+            text-decoration: none;
+            transition: all ease 0.3s;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}

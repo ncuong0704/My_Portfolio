@@ -1,0 +1,48 @@
+/* HTML: <div class="loader__item"></div> */
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: $modal-color;
+    z-index: 99999;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease 0.3s;
+}
+.loader.active{
+    opacity: 1;
+    visibility: visible;
+}
+.loader__spin {
+    margin: auto;
+    width: 50px;
+    aspect-ratio: 1;
+    display: grid;
+    -webkit-mask: conic-gradient(from 15deg, #0000, #000);
+    animation: l26 1s infinite steps(12);
+}
+.loader__spin,
+.loader__spin:before,
+.loader__spin:after {
+    background:
+        radial-gradient(closest-side at 50% 12.5%, $loader-color 96%, #0000) 50% 0/20% 80% repeat-y,
+        radial-gradient(closest-side at 12.5% 50%, $loader-color 96%, #0000) 0 50%/80% 20% repeat-x;
+}
+.loader__spin:before,
+.loader__spin:after {
+    content: "";
+    grid-area: 1/1;
+    transform: rotate(30deg);
+}
+.loader__spin:after {
+    transform: rotate(60deg);
+}
+
+@keyframes l26 {
+    100% {
+        transform: rotate(1turn);
+    }
+}
