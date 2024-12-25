@@ -120,3 +120,12 @@ if ($(".project__item").length) {
     $(".popup").removeClass("active");
   });
 }
+
+$(document).ready(function () {
+  $(".loader").removeClass("active");
+});
+if ($(".to-top").length) {
+  $(window).scroll(function () {
+    $(this).scrollTop() > 3 * window.innerHeight ? $(".to-top").addClass("active") : $(".to-top").removeClass("active");
+  });
+}
