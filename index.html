@@ -9,19 +9,55 @@
     <link rel="stylesheet" href="./css/font-awesome.css" />
     <link rel="stylesheet" href="./css/fancybox.css" />
     <link rel="stylesheet" href="./css/library.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     <div class="loader">
       <div class="loader__spin"></div>
     </div>
-    <a href="#" class="to-top active">
+    <a href="#home" class="to-top active">
       <i class="fa-solid fa-arrow-up-long"></i>
     </a>
+    <div class="modal"></div>
+    <div class="popup">
+      <div class="popup__close">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <a href="#" class="popup__image">
+        <img src="./img/home-slide-1.webp" alt="project" class="popup__image" />
+      </a>
+      <h2 class="popup__name">Bisa game</h2>
+      <div class="popup__group">
+        <div class="popup__label">Tổng quan:</div>
+        <div class="popup__content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit veniam possimus ea, unde quasi alias? Iusto
+          alias, aliquid architecto sit dolor nihil beatae sunt optio necessitatibus? Tempore, dicta. Dicta, voluptas.
+        </div>
+      </div>
+      <div class="popup__group">
+        <div class="popup__label">Khó khăn:</div>
+        <div class="popup__content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit veniam possimus ea, unde quasi alias? Iusto
+          alias, aliquid architecto sit dolor nihil beatae sunt optio necessitatibus? Tempore, dicta. Dicta, voluptas.
+        </div>
+      </div>
+      <div class="popup__group">
+        <div class="popup__label">Giải pháp:</div>
+        <div class="popup__content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit veniam possimus ea, unde quasi alias? Iusto
+          alias, aliquid architecto sit dolor nihil beatae sunt optio necessitatibus? Tempore, dicta. Dicta, voluptas.
+        </div>
+      </div>
+      <a href="#" class="btn popup__btn"><span>Xem kết quả</span></a>
+    </div>
     <div class="wrapper">
       <main class="main">
         <div class="container">
           <div class="portfolio">
+            <div class="portfolio__bars">
+              <i class="fa-solid fa-bars"></i>
+            </div>
             <aside class="portfolio__left">
               <div class="portfolio__info">
                 <div class="portfolio__avatar">
@@ -58,7 +94,7 @@
               <div class="portfolio__copyright">© Copyright ©2024 All rights reserved</div>
             </aside>
             <div class="portfolio__right">
-              <div id="fullpage">
+              <div id="fullpage" class="fullpage">
                 <div class="section">
                   <div class="home">
                     <div class="home__slide">
@@ -95,9 +131,9 @@
                 </div>
                 <div class="section">
                   <div class="section__body">
-                    <div class="heading__meta">About me</div>
-                    <div class="heading">Who am i?</div>
-                    <div class="content content--mt">
+                    <div class="heading__meta" data-aos="fade-left" data-aos-delay="200">About me</div>
+                    <div class="heading" data-aos="fade-left" data-aos-delay="200">Who am i?</div>
+                    <div class="content content--mt" data-aos="fade-left" data-aos-delay="200">
                       <p>
                         Hi I'm Jackson Ford On her way she met a copy. The copy warned the Little Blind Text, that where
                         it came from it would have been rewritten a thousand times and everything that was left from its
@@ -110,7 +146,7 @@
                         decided to leave for the far World of Grammar.
                       </p>
                     </div>
-                    <div class="highlight">
+                    <div class="highlight" data-aos="fade-left" data-aos-delay="200">
                       <div class="heading heading--small heading--mb">
                         I am happy to know you that 300+ projects done sucessfully!
                       </div>
@@ -124,21 +160,21 @@
                 </div>
                 <div class="section">
                   <div class="section__body">
-                    <div class="heading__meta">My Specialty</div>
-                    <div class="heading">My Skills</div>
-                    <div class="content content--mt">
+                    <div class="heading__meta" data-aos="fade-left" data-aos-delay="200">My Specialty</div>
+                    <div class="heading" data-aos="fade-left" data-aos-delay="200">My Skills</div>
+                    <div class="content content--mt" data-aos="fade-left" data-aos-delay="200">
                       <p>
                         The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild
                         Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her
                         seven versalia, put her initial into the belt and made herself on the way.
                       </p>
                     </div>
-                    <div class="skills">
+                    <div class="skills" data-aos="fade-left" data-aos-delay="200">
                       <div class="row">
                         <div class="col l-6 m-12 c-12">
                           <div class="progress">
                             <div class="progress__name">Photoshop</div>
-                            <div class="progress__bar" style="--bg-color: red; --width-bar: 75%">
+                            <div class="progress__bar" style="--bg-color: red; --width-bar: 25%">
                               <span></span>
                             </div>
                           </div>
@@ -146,7 +182,7 @@
                         <div class="col l-6 m-12 c-12">
                           <div class="progress">
                             <div class="progress__name">Photoshop</div>
-                            <div class="progress__bar" style="--bg-color: blue; --width-bar: 75%">
+                            <div class="progress__bar" style="--bg-color: blue; --width-bar: 55%">
                               <span></span>
                             </div>
                           </div>
@@ -154,7 +190,7 @@
                         <div class="col l-6 m-12 c-12">
                           <div class="progress">
                             <div class="progress__name">Photoshop</div>
-                            <div class="progress__bar" style="--bg-color: orange; --width-bar: 75%">
+                            <div class="progress__bar" style="--bg-color: orange; --width-bar: 65%">
                               <span></span>
                             </div>
                           </div>
@@ -170,7 +206,7 @@
                         <div class="col l-6 m-12 c-12">
                           <div class="progress">
                             <div class="progress__name">Photoshop</div>
-                            <div class="progress__bar" style="--bg-color: pink; --width-bar: 75%">
+                            <div class="progress__bar" style="--bg-color: pink; --width-bar: 85%">
                               <span></span>
                             </div>
                           </div>
@@ -178,7 +214,7 @@
                         <div class="col l-6 m-12 c-12">
                           <div class="progress">
                             <div class="progress__name">Photoshop</div>
-                            <div class="progress__bar" style="--bg-color: brown; --width-bar: 75%">
+                            <div class="progress__bar" style="--bg-color: brown; --width-bar: 25%">
                               <span></span>
                             </div>
                           </div>
@@ -189,9 +225,9 @@
                 </div>
                 <div class="section">
                   <div class="section__body">
-                    <div class="heading__meta">Education</div>
-                    <div class="heading">Education</div>
-                    <div class="education">
+                    <div class="heading__meta" data-aos="fade-left" data-aos-delay="200">Education</div>
+                    <div class="heading" data-aos="fade-left" data-aos-delay="200">Education</div>
+                    <div class="education" data-aos="fade-left" data-aos-delay="200">
                       <div class="education__item">
                         <div class="education__top">
                           <span>Far far away, behind the word mountains</span>
@@ -248,10 +284,15 @@
                 </div>
                 <div class="section">
                   <div class="section__body">
-                    <div class="heading__meta">Experience</div>
-                    <div class="heading">Work Experience</div>
+                    <div class="heading__meta" data-aos="fade-left" data-aos-delay="200">Experience</div>
+                    <div class="heading" data-aos="fade-left" data-aos-delay="200">Work Experience</div>
                     <div class="experience">
-                      <div class="experience__item" style="--color-circle: blue">
+                      <div
+                        class="experience__item"
+                        style="--color-circle: blue"
+                        data-aos="fade-left"
+                        data-aos-delay="200"
+                      >
                         <div class="experience__left">
                           <span><i class="fa-solid fa-briefcase"></i></span>
                         </div>
@@ -269,7 +310,12 @@
                           </div>
                         </div>
                       </div>
-                      <div class="experience__item" style="--color-circle: red">
+                      <div
+                        class="experience__item"
+                        style="--color-circle: red"
+                        data-aos="fade-left"
+                        data-aos-delay="200"
+                      >
                         <div class="experience__left">
                           <span><i class="fa-solid fa-briefcase"></i></span>
                         </div>
@@ -287,7 +333,12 @@
                           </div>
                         </div>
                       </div>
-                      <div class="experience__item" style="--color-circle: purple">
+                      <div
+                        class="experience__item"
+                        style="--color-circle: purple"
+                        data-aos="fade-left"
+                        data-aos-delay="200"
+                      >
                         <div class="experience__left">
                           <span><i class="fa-solid fa-briefcase"></i></span>
                         </div>
@@ -305,7 +356,12 @@
                           </div>
                         </div>
                       </div>
-                      <div class="experience__item" style="--color-circle: green">
+                      <div
+                        class="experience__item"
+                        style="--color-circle: green"
+                        data-aos="fade-left"
+                        data-aos-delay="200"
+                      >
                         <div class="experience__left">
                           <span><i class="fa-solid fa-briefcase"></i></span>
                         </div>
@@ -328,10 +384,9 @@
                 </div>
                 <div class="section">
                   <div class="section__body">
-                    <div class="heading__meta">Experience</div>
-                    <div class="heading">Work Experience</div>
-
-                    <div class="project">
+                    <div class="heading__meta" data-aos="fade-left" data-aos-delay="200">Recent Work</div>
+                    <div class="heading" data-aos="fade-left" data-aos-delay="200">My project</div>
+                    <div class="project" data-aos="fade-left" data-aos-delay="200">
                       <div class="project__top">
                         <div class="project__tab active">HTML, CSS, JS</div>
                         <div class="project__tab">React JS</div>
@@ -340,120 +395,39 @@
                       <div class="project__display active">
                         <div class="row">
                           <div class="col l-6 m-12 c-12">
-                            <a href="#" class="project__item">
+                            <div class="project__item">
                               <img src="./img/home-slide-1.webp" alt="project" class="project__image" />
                               <div class="project__body">
                                 <div class="project__name effect effect--1">Bisa Game</div>
                                 <div class="project__desc effect effect--2">React js, HTML</div>
                               </div>
-                            </a>
-                          </div>
-                          <div class="col l-6 m-12 c-12">
-                            <a href="#" class="project__item">
-                              <img src="./img/home-slide-1.webp" alt="project" class="project__image" />
-                              <div class="project__body">
-                                <div class="project__name effect effect--1">Bisa Game</div>
-                                <div class="project__desc effect effect--2">React js, HTML</div>
-                              </div>
-                            </a>
-                          </div>
-                          <div class="col l-6 m-12 c-12">
-                            <a href="#" class="project__item">
-                              <img src="./img/home-slide-1.webp" alt="project" class="project__image" />
-                              <div class="project__body">
-                                <div class="project__name effect effect--1">Bisa Game</div>
-                                <div class="project__desc effect effect--2">React js, HTML</div>
-                              </div>
-                            </a>
-                          </div>
-                          <div class="col l-6 m-12 c-12">
-                            <a href="#" class="project__item">
-                              <img src="./img/home-slide-1.webp" alt="project" class="project__image" />
-                              <div class="project__body">
-                                <div class="project__name effect effect--1">Bisa Game</div>
-                                <div class="project__desc effect effect--2">React js, HTML</div>
-                              </div>
-                            </a>
+                            </div>
                           </div>
                         </div>
                       </div>
                       <div class="project__display">
                         <div class="row">
                           <div class="col l-6 m-12 c-12">
-                            <a href="#" class="project__item">
-                              <img src="./img/home-slide-1.webp" alt="project" class="project__image" />
-                              <div class="project__body">
-                                <div class="project__name effect effect--1">Bisa Game 2</div>
-                                <div class="project__desc effect effect--2">React js, HTML</div>
-                              </div>
-                            </a>
-                          </div>
-                          <div class="col l-6 m-12 c-12">
-                            <a href="#" class="project__item">
+                            <div class="project__item">
                               <img src="./img/home-slide-1.webp" alt="project" class="project__image" />
                               <div class="project__body">
                                 <div class="project__name effect effect--1">Bisa Game</div>
                                 <div class="project__desc effect effect--2">React js, HTML</div>
                               </div>
-                            </a>
-                          </div>
-                          <div class="col l-6 m-12 c-12">
-                            <a href="#" class="project__item">
-                              <img src="./img/home-slide-1.webp" alt="project" class="project__image" />
-                              <div class="project__body">
-                                <div class="project__name effect effect--1">Bisa Game</div>
-                                <div class="project__desc effect effect--2">React js, HTML</div>
-                              </div>
-                            </a>
-                          </div>
-                          <div class="col l-6 m-12 c-12">
-                            <a href="#" class="project__item">
-                              <img src="./img/home-slide-1.webp" alt="project" class="project__image" />
-                              <div class="project__body">
-                                <div class="project__name effect effect--1">Bisa Game</div>
-                                <div class="project__desc effect effect--2">React js, HTML</div>
-                              </div>
-                            </a>
+                            </div>
                           </div>
                         </div>
                       </div>
                       <div class="project__display">
                         <div class="row">
                           <div class="col l-6 m-12 c-12">
-                            <a href="#" class="project__item">
+                            <div class="project__item">
                               <img src="./img/home-slide-1.webp" alt="project" class="project__image" />
                               <div class="project__body">
                                 <div class="project__name effect effect--1">Bisa Game</div>
                                 <div class="project__desc effect effect--2">React js, HTML</div>
                               </div>
-                            </a>
-                          </div>
-                          <div class="col l-6 m-12 c-12">
-                            <a href="#" class="project__item">
-                              <img src="./img/home-slide-1.webp" alt="project" class="project__image" />
-                              <div class="project__body">
-                                <div class="project__name effect effect--1">Bisa Game</div>
-                                <div class="project__desc effect effect--2">React js, HTML</div>
-                              </div>
-                            </a>
-                          </div>
-                          <div class="col l-6 m-12 c-12">
-                            <a href="#" class="project__item">
-                              <img src="./img/home-slide-1.webp" alt="project" class="project__image" />
-                              <div class="project__body">
-                                <div class="project__name effect effect--1">Bisa Game</div>
-                                <div class="project__desc effect effect--2">React js, HTML</div>
-                              </div>
-                            </a>
-                          </div>
-                          <div class="col l-6 m-12 c-12">
-                            <a href="#" class="project__item">
-                              <img src="./img/home-slide-1.webp" alt="project" class="project__image" />
-                              <div class="project__body">
-                                <div class="project__name effect effect--1">Bisa Game</div>
-                                <div class="project__desc effect effect--2">React js, HTML</div>
-                              </div>
-                            </a>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -462,9 +436,9 @@
                 </div>
                 <div class="section">
                   <div class="section__body">
-                    <div class="heading__meta">Get in Touch</div>
-                    <div class="heading">Contact</div>
-                    <div class="contact">
+                    <div class="heading__meta" data-aos="fade-left" data-aos-delay="200">Get in Touch</div>
+                    <div class="heading" data-aos="fade-left" data-aos-delay="200">Contact</div>
+                    <div class="contact" data-aos="fade-left" data-aos-delay="200">
                       <a href="mailTo: ncuong0704@gmail.com" class="contact__item">
                         <div class="contact__icon">
                           <i class="fa-solid fa-envelope"></i>
@@ -496,6 +470,7 @@
     <script src="./js/slick.js"></script>
     <script src="./js/fancybox.js"></script>
     <script src="./js/library.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

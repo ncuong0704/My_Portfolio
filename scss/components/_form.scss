@@ -1,5 +1,90 @@
-// class invalid cho group lỗi
-.form {
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $modal-color;
+    z-index: 99999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease-out 0.3s;
+    &.active{
+        opacity: 1;
+        visibility: visible;
+    }
 }
-
-
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    overflow: auto;
+    max-height: calc(100% - 60px);
+    max-width: calc(100% - 20px);
+    background-color: $white-color;
+    padding: 30px 40px;
+    z-index: 99999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease-out 0.3s;
+    &.active{
+        opacity: 1;
+        visibility: visible;
+    }
+    &__close{
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        color: $loader-color;
+        font-size: 18px;
+        cursor: pointer;
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+    &__image {
+        display: block;
+        margin: auto;
+        height: 160px;
+        width: 240px;
+        transition: all ease-out 0.3s;
+        &:hover {
+            opacity: 0.8;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+        }
+    }
+    &__name {
+        font-size: 20px;
+        font-family: mon-700;
+        text-align: center;
+        margin: 15px 0;
+        color: $blue-color;
+    }
+    &__group {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+    &__label {
+        white-space: nowrap;
+        font-family: mon-600;
+        font-size: 14px;
+        display: block;
+        width: 90px;
+    }
+    &__content {
+        margin-left: 10px;
+        font-size: 14px;
+        flex: 1;
+    }
+    &__btn {
+        margin: 40px auto 0;
+    }
+}

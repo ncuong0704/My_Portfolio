@@ -4,9 +4,15 @@
     text-transform: uppercase;
     word-spacing: 5px;
     line-height: 1.3;
+    @include tablet-mobile{
+        font-size: 28px;
+    }
     &--small{
         font-size: 24px;
         font-family: play-500;
+        @include tablet-mobile{
+            font-size: 18px;
+        }
     }
     &--mb{
         margin-bottom: 24px;

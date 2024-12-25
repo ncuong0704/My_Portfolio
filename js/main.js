@@ -1,3 +1,14 @@
+AOS.init({
+  duration: 1000,
+});
+function activateProgressBars() {
+  setTimeout(() => {
+    $(".progress__bar").addClass("active");
+  }, 300);
+}
+function resetProgressBars() {
+  $(".progress__bar").removeClass("active");
+}
 $("#fullpage").fullpage({
   autoScrolling: false,
   licenseKey: "xxxxxxxxxxxxxxxxxxxxxxxxx",
@@ -6,6 +17,20 @@ $("#fullpage").fullpage({
   scrollingSpeed: 300,
   menu: "#menu",
   anchors: ["home", "about", "skills", "education", "experience", "project", "contact"],
+  onLeave: function (origin, destination, direction) {
+    $(".portfolio__bars").removeClass("active");
+    $(".portfolio__left").removeClass("active");
+    $(".portfolio__right").removeClass("active");
+  },
+
+  afterLoad: function (origin, destination, direction) {
+    AOS.refresh();
+    if (origin === "skills") {
+      activateProgressBars();
+    } else {
+      resetProgressBars();
+    }
+  },
 });
 
 if ($(".home").length) {
@@ -72,5 +97,26 @@ if ($(".project__tab").length) {
         $(".project__display").eq(inx).addClass("active");
       }
     });
+  });
+}
+if ($(".portfolio__bars").length) {
+  $(".portfolio__bars").click(function (e) {
+    e.preventDefault();
+    $(this).toggleClass("active");
+    $(".portfolio__left").toggleClass("active");
+    $(".portfolio__right").toggleClass("active");
+  });
+}
+
+if ($(".project__item").length) {
+  $(".project__item").click(function (e) {
+    e.preventDefault();
+    $(".modal").addClass("active");
+    $(".popup").addClass("active");
+  });
+  $(".popup__close").click(function (e) {
+    e.preventDefault();
+    $(".modal").removeClass("active");
+    $(".popup").removeClass("active");
   });
 }

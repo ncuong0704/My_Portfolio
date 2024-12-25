@@ -1,5 +1,8 @@
 .portfolio {
     display: flex;
+    @include tablet-mobile{
+        overflow: hidden;
+    }
     &__left {
         width: 25%;
         height: 100vh;
@@ -8,7 +11,52 @@
         padding: 20px;
         position: sticky;
         top: 0;
+        @include tablet-mobile {
+            position: fixed;
+            top: 0;
+            left: -70%;
+            z-index: 99999;
+            width: 70%;
+            min-width: 70%;
+            transition: all ease-out 0.6s;
+            &.active{
+                left: 0;
+            }
+        }
     }
+    &__right {
+        width: 75%;
+        @include tablet-mobile {
+            width: 100%;
+            min-width: 100%;
+            transition: all ease-out 0.6s;
+            &.active{
+                margin-left: 70%;
+            }
+        }
+    }
+    &__bars {
+        position: fixed;
+        top: 20px;
+        left: 25px;
+        z-index: 9999;
+        font-size: 24px;
+        transition: all ease-out 0.6s;
+        display: none;
+        @include tablet-mobile {
+            display: block;
+            &.active {
+                left: calc(70% + 25px);
+                color: $loader-color;
+                i {
+                    &::before {
+                        content: "\f00d";
+                    }
+                }
+            }
+        }
+    }
+
     &__info {
         text-align: center;
     }
@@ -34,10 +82,11 @@
         font-family: "mon-i-500";
     }
     &__navbar {
+        margin: 40px;
         ul {
             padding-left: 0;
             list-style: none;
-            margin: 40px 0;
+            margin: 0;
             text-align: center;
             li {
                 &:not(:last-child) {
@@ -80,13 +129,17 @@
         font-size: 14px;
         text-align: center;
     }
-    &__right {
-        width: 75%;
-    }
+}
+.fullpage {
+    overflow: hidden;
 }
 .section {
+    height: auto;
     &__body {
         padding: 60px 40px;
+        @include tablet-mobile {
+            padding: 40px 24px;
+        }
     }
 }
 .home {
@@ -110,6 +163,10 @@
         transform: translateY(-50%);
         left: 40px;
         width: 360px;
+        @include tablet-mobile {
+            width: calc(60% - 24px);
+            left: 24px;
+        }
         .effect {
             opacity: 0;
             transition-timing-function: ease;
@@ -143,9 +200,15 @@
         font-size: 52px;
         font-family: play-500;
         margin: 0;
+        @include tablet-mobile {
+            font-size: 32px;
+        }
     }
     &__desc {
         margin: 10px 0 40px;
+        @include tablet-mobile {
+            font-size: 14px;
+        }
     }
     &__action {
     }
@@ -173,7 +236,8 @@
             bottom: 0;
             border-radius: 10px;
             background-color: var(--bg-color);
-            width: var(--width-bar);
+            width: 0;
+            transition: all ease-out 1s;
         }
         &::before {
             content: "";
@@ -182,9 +246,20 @@
             height: 10px;
             border-radius: 50%;
             background-color: var(--bg-color);
-            left: calc(var(--width-bar) - 5px);
             top: 50%;
+            left: 0;
             transform: translateY(-50%);
+            transition: all ease-out 1s;
+        }
+        &.active {
+            span {
+                width: var(--width-bar);
+                transition: all ease-out 3s;
+            }
+            &::before {
+                left: calc(var(--width-bar) - 5px);
+                transition: all ease-out 3s;
+            }
         }
     }
 }
@@ -216,6 +291,10 @@
         transition: all ease-out 0.3s;
         cursor: pointer;
         span {
+            margin-right: 30px;
+            @include tablet-mobile {
+                margin-right: 15px;
+            }
         }
         i {
             font-size: 14px;
@@ -313,6 +392,9 @@
     &__name {
         font-size: 20px;
         font-family: mon-600;
+        @include tablet-mobile {
+            font-size: 16px;
+        }
     }
     &__time {
         font-size: 14px;
@@ -320,6 +402,10 @@
         margin-left: 10px;
         color: $blue-color;
         letter-spacing: 2px;
+        white-space: nowrap;
+        @include tablet-mobile {
+            font-size: 11px;
+        }
     }
     &__body {
         margin-top: 20px;
@@ -366,6 +452,7 @@
         position: relative;
         padding-top: 64%;
         margin-bottom: 30px;
+        cursor: pointer;
         &:hover {
             .project__body {
                 opacity: 1;
@@ -397,6 +484,10 @@
         opacity: 0;
         visibility: hidden;
         transition: all ease-out 0.2s;
+        @include tablet-mobile {
+            opacity: 1;
+            visibility: visible;
+        }
         .effect {
             opacity: 0;
             transition-timing-function: ease;
@@ -409,6 +500,10 @@
             &--2 {
                 transform: translate3d(20px, 0, 0);
                 transition-delay: 0.2s;
+            }
+            @include tablet-mobile {
+                opacity: 1;
+                transform: translateZ(0);
             }
         }
     }
@@ -433,6 +528,9 @@
         align-items: center;
         margin-bottom: 30px;
         color: $black-color;
+        @include tablet-mobile {
+            width: 100%;
+        }
         &:hover {
             .contact__icon {
                 transform: translateY(-5px);
@@ -459,3 +557,4 @@
         font-size: 14px;
     }
 }
+
