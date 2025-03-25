@@ -5,38 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" type="image/x-icon" href="link logo" />
     <title>Trang chủ</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
-      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-      media="print"
-      onload="this.media='all'"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-      media="print"
-      onload="this.media='all'"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css"
-      integrity="sha512-q54FvbV+gGBn+NvgaD4gpJ7w4wrO00DgW7Rx503PIhrf0CuMwLOwbS+bXgOBFSob+6GVy1HDPfaRLJ8w2jiS4g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-      media="print"
-      onload="this.media='all'"
-    />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/font-awesome.css" />
+    <link rel="stylesheet" href="./css/fancybox.css" />
+    <link rel="stylesheet" href="./css/library.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-      media="print"
-      onload="this.media='all'"
     />
     <link rel="stylesheet" href="css/main.css" />
   </head>
@@ -57,96 +32,52 @@
             <aside class="portfolio__left">
               <div class="portfolio__info">
                 <div class="portfolio__avatar">
-                  <img
-                    src="./img/avatar.jpg"
-                    alt="avatar"
-                    width="500"
-                    height="500"
-                    aspectratio="1:1"
-                  />
+                  <img src="./img/avatar.jpg" alt="avatar" />
                 </div>
-                <h2 class="portfolio__name">Nguyen Van Cuong</h2>
+                <h2 class="portfolio__name">Nguyễn Văn Cường</h2>
                 <div class="portfolio__position">Frontend Developer</div>
               </div>
               <div class="portfolio__navbar">
                 <ul id="menu">
                   <li data-menuanchor="home" class="active">
-                    <a href="#home">Home</a>
+                    <a href="#home">Trang chủ</a>
                   </li>
                   <li data-menuanchor="about">
-                    <a href="#about">About</a>
+                    <a href="#about">Giới thiệu</a>
                   </li>
                   <li data-menuanchor="skills">
-                    <a href="#skills">Skills</a>
+                    <a href="#skills">Các kỹ năng</a>
                   </li>
                   <li data-menuanchor="education">
-                    <a href="#education">Education</a>
+                    <a href="#education">Bằng cấp</a>
                   </li>
                   <li data-menuanchor="experience">
-                    <a href="#experience">Experience</a>
+                    <a href="#experience">Kinh nghiệm làm việc</a>
                   </li>
                   <li data-menuanchor="project">
-                    <a href="#project">Project</a>
+                    <a href="#project">Các dự án</a>
                   </li>
                   <li data-menuanchor="contact">
-                    <a href="#contact">Contact</a>
+                    <a href="#contact">Liên hệ</a>
                   </li>
                 </ul>
               </div>
               <div class="portfolio__language">
-                <a href="./index.html" class="portfolio__icon active">
+                <a href="./index.html" class="portfolio__icon">
                   <img src="./img/en.png" alt="en" />
                 </a>
-                <a href="./home-vn.html" class="portfolio__icon">
+                <a href="./home-vn.html" class="portfolio__icon active">
                   <img src="./img/vn.png" alt="vi" />
                 </a>
               </div>
               <div class="portfolio__copyright">
-                "© Copyright 2025 NguyenCuong - All rights reserved."
+                "© Thiết kế và phát triển bởi NguyenCuong, 2025."
               </div>
             </aside>
             <div class="portfolio__right">
               <div id="fullpage" class="fullpage">
                 <div class="section">
                   <div class="home">
-                    <div class="home__slide">
-                      <picture>
-                        <source
-                          media="(max-width: 1024px)"
-                          srcset="./img/banner-3.jpg"
-                        />
-                        <img
-                          class="home__bg"
-                          src="./img/banner-3.jpg"
-                          alt="home-slide"
-                          width="1920"
-                          height="1080"
-                          aspectratio="16:9"
-                        />
-                      </picture>
-                      <div class="home__body">
-                        <h2 class="home__title effect effect--1">
-                          Hi! I'm Cuong
-                        </h2>
-                        <div class="home__desc effect effect--2">
-                          As a Frontend Developer with 3 years of experience, I
-                          excel at converting designs from Figma into fully
-                          functional web interfaces and developing complex
-                          features.
-                        </div>
-                        <div class="home__action effect effect--3">
-                          <a
-                            href="./Nguyen-Van-Cuong--EN.pdf"
-                            download=""
-                            class="btn"
-                          >
-                            <span>
-                              Download CV <i class="fa-solid fa-download"></i>
-                            </span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
                     <div class="home__slide">
                       <picture>
                         <source
@@ -158,14 +89,48 @@
                           src="./img/banner-4.jpg"
                           alt="home-slide"
                           loading="lazy"
-                          width="1920"
-                          height="1080"
-                          aspectratio="16:9"
                         />
                       </picture>
                       <div class="home__body">
                         <h2 class="home__title effect effect--1">
-                          Hi! I'm a Front-end Developer
+                          Xin chào! <br />
+                          Tôi là Cường
+                        </h2>
+                        <div class="home__desc effect effect--2">
+                          là một lập trình viện Front-end với có 3 năm kinh
+                          nghiệm trong việc chuyển đổi thiết kế từ Figma thành
+                          giao diện web
+                        </div>
+                        <div class="home__action effect effect--3">
+                          <a
+                            href="./Nguyen-Van-Cuong-VN.pdf"
+                            download=""
+                            class="btn"
+                          >
+                            <span>
+                              Tải CV <i class="fa-solid fa-download"></i>
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="home__slide">
+                      <picture>
+                        <source
+                          media="(max-width: 1024px)"
+                          srcset="./img/banner-3.jpg"
+                        />
+                        <img
+                          class="home__bg"
+                          src="./img/banner-3.jpg"
+                          alt="home-slide"
+                          loading="lazy"
+                        />
+                      </picture>
+                      <div class="home__body">
+                        <h2 class="home__title effect effect--1">
+                          Tôi có <br />
+                          kinh nghiệm với
                         </h2>
                         <div class="home__desc effect effect--2">
                           React.js, Next.js, Tailwind CSS, Ant Design, Material
@@ -173,12 +138,12 @@
                         </div>
                         <div class="home__action effect effect--3">
                           <a
-                            href="./Nguyen-Van-Cuong--EN.pdf"
+                            href="./Nguyen-Van-Cuong-VN.pdf"
                             download=""
                             class="btn"
                           >
                             <span>
-                              Download CV <i class="fa-solid fa-download"></i>
+                              Tải CV <i class="fa-solid fa-download"></i>
                             </span>
                           </a>
                         </div>
@@ -193,14 +158,14 @@
                       data-aos="fade-left"
                       data-aos-delay="200"
                     >
-                      About me
+                      Giới thiệu
                     </div>
                     <div
                       class="heading"
                       data-aos="fade-left"
                       data-aos-delay="200"
                     >
-                      Who am i?
+                      Tôi là ai?
                     </div>
                     <div
                       class="content content--mt"
@@ -208,17 +173,20 @@
                       data-aos-delay="200"
                     >
                       <p>
-                        As a Frontend Developer with 3 years of experience, I
-                        excel at converting designs from Figma into fully
-                        functional web interfaces and developing complex
-                        features.
+                        Với vai trò một Front-End Developer, tôi đã có cơ hội
+                        làm việc chặt chẽ với các đội ngũ thiết kế và backend để
+                        tạo ra các sản phẩm web chất lượng cao. Tôi có kinh
+                        nghiệm 3 năm trong việc chuyển đổi thiết kế từ Figma
+                        thành giao diện web, đồng thời hợp tác với các developer
+                        backend để xây dựng các tính năng phức tạp. Khả năng
+                        giao tiếp tốt và tinh thần làm việc nhóm giúp tôi đóng
+                        góp hiệu quả vào thành công của dự án.
                       </p>
                       <p>
-                        With 1 year of experience working with React and
-                        Next.js, I have built modern web applications focused on
-                        optimizing user experience (UX). I am always eager to
-                        learn and apply new technologies to contribute
-                        effectively to the success of projects.
+                        Ngoài ra, tôi có 1 năm kinh nghiệm làm việc với React và
+                        Next.js trong các dự án cá nhân đã giúp tôi mở rộng kỹ
+                        năng và tạo ra những ứng dụng web hiện đại, đáp ứng mọi
+                        yêu cầu của người dùng
                       </p>
                     </div>
                     <div
@@ -227,12 +195,12 @@
                       data-aos-delay="200"
                     >
                       <div class="heading heading--small heading--mb">
-                        Highly responsible, collaborative team player, and
-                        always eager to learn and adopt new technologies.
+                        Tinh thần trách nhiệm cao, đảm bảo hoàn thành đúng tiến
+                        độ công việc.
                       </div>
                       <div data-menuanchor="home">
                         <a href="#contact" class="btn">
-                          <span> Hire me </span>
+                          <span> Liên hệ tôi </span>
                         </a>
                       </div>
                     </div>
@@ -245,14 +213,14 @@
                       data-aos="fade-left"
                       data-aos-delay="200"
                     >
-                      My Specialty
+                      Đặc biệt
                     </div>
                     <div
                       class="heading"
                       data-aos="fade-left"
                       data-aos-delay="200"
                     >
-                      My Skills
+                      Các kỹ năng
                     </div>
                     <div
                       class="content content--mt"
@@ -260,15 +228,15 @@
                       data-aos-delay="200"
                     >
                       <p>
-                        Over the past three years, I have refined my expertise
-                        in front-end development, continuously enhancing my
-                        ability to create engaging, high-performance, and
-                        user-friendly web applications. Through hands-on
-                        experience, collaboration with cross-functional teams,
-                        and staying up to date with industry trends, I have
-                        built a strong foundation in modern web technologies.
-                        Below are the key skills I have acquired throughout my
-                        career.
+                        Trong ba năm qua, tôi đã trau dồi chuyên môn của mình
+                        trong lĩnh vực phát triển giao diện người dùng
+                        (front-end), liên tục nâng cao khả năng tạo ra các ứng
+                        dụng web hấp dẫn, hiệu suất cao và thân thiện với người
+                        dùng. Thông qua kinh nghiệm thực tiễn, làm việc nhóm đa
+                        chức năng và cập nhật các xu hướng ngành, tôi đã xây
+                        dựng nền tảng vững chắc về các công nghệ web hiện đại.
+                        Dưới đây là những kỹ năng chính mà tôi đã tích lũy được
+                        trong suốt sự nghiệp của mình.
                       </p>
                     </div>
                     <div
@@ -306,7 +274,7 @@
                             <div class="progress__name">React JS, Next JS</div>
                             <div
                               class="progress__bar"
-                              style="--bg-color: #0f52ba; --width-bar: 70%"
+                              style="--bg-color: #0F52BA; --width-bar: 70%"
                             >
                               <span></span>
                             </div>
@@ -319,7 +287,7 @@
                             </div>
                             <div
                               class="progress__bar"
-                              style="--bg-color: #0073cf; --width-bar: 70%"
+                              style="--bg-color: #0073CF; --width-bar: 70%"
                             >
                               <span></span>
                             </div>
@@ -332,7 +300,7 @@
                             </div>
                             <div
                               class="progress__bar"
-                              style="--bg-color: #0047ab; --width-bar: 70%"
+                              style="--bg-color: #0047AB; --width-bar: 70%"
                             >
                               <span></span>
                             </div>
@@ -343,7 +311,7 @@
                             <div class="progress__name">RESTful API</div>
                             <div
                               class="progress__bar"
-                              style="--bg-color: #4169e1; --width-bar: 70%"
+                              style="--bg-color: #4169E1; --width-bar: 70%"
                             >
                               <span></span>
                             </div>
@@ -354,7 +322,7 @@
                             <div class="progress__name">Photoshop, Figma</div>
                             <div
                               class="progress__bar"
-                              style="--bg-color: #1e90ff; --width-bar: 80%"
+                              style="--bg-color: #1E90FF; --width-bar: 80%"
                             >
                               <span></span>
                             </div>
@@ -369,7 +337,7 @@
                             </div>
                             <div
                               class="progress__bar"
-                              style="--bg-color: #4682b4; --width-bar: 80%"
+                              style="--bg-color: #4682B4; --width-bar: 80%"
                             >
                               <span></span>
                             </div>
@@ -380,7 +348,7 @@
                             <div class="progress__name">English</div>
                             <div
                               class="progress__bar"
-                              style="--bg-color: #56a0d3; --width-bar: 50%"
+                              style="--bg-color: #56A0D3; --width-bar: 50%"
                             >
                               <span></span>
                             </div>
@@ -397,14 +365,14 @@
                       data-aos="fade-left"
                       data-aos-delay="200"
                     >
-                      Education
+                      Học vấn
                     </div>
                     <div
                       class="heading"
                       data-aos="fade-left"
                       data-aos-delay="200"
                     >
-                      Education
+                      Bằng cấp/ Chứng chỉ
                     </div>
                     <div
                       class="education"
@@ -414,41 +382,39 @@
                       <div class="education__item">
                         <div class="education__top">
                           <span
-                            >Ho Chi Minh City University of Natural Resources
-                            and Environment</span
+                            >Đại học Tài nguyên và Môi trường Thành phố Hồ Chí
+                            Minh</span
                           >
                           <i class="fa-solid fa-plus"></i>
                         </div>
                         <div class="education__body">
-                          <p>Bachelor’s Degree in Business Administration</p>
+                          <p>Quản trị kinh doanh</p>
                           <ul>
-                            <li>2013-2017</li>
+                            <li>Năm 2013- 2017</li>
                           </ul>
                         </div>
                       </div>
                       <div class="education__item">
                         <div class="education__top">
-                          <span> Simple English </span>
+                          <span>Simple English</span>
                           <i class="fa-solid fa-plus"></i>
                         </div>
                         <div class="education__body">
-                          <p>
-                            Certi cate of Pre-Intermediate English Pro ciency
-                          </p>
+                          <p>Giấy chứng nhận hoành thành Pre-Intermediate</p>
                           <ul>
-                            <li>2019- 2020</li>
+                            <li>Năm 2019- 2020</li>
                           </ul>
                         </div>
                       </div>
                       <div class="education__item">
                         <div class="education__top">
-                          <span>Aptech Vietnam</span>
+                          <span>Aptech Việt Nam</span>
                           <i class="fa-solid fa-plus"></i>
                         </div>
                         <div class="education__body">
-                          <p>International Programming Certi cate</p>
+                          <p>Chứng chỉ lập trình viên Quốc tế</p>
                           <ul>
-                            <li>2020- 2021</li>
+                            <li>Năm 2020- 2021</li>
                           </ul>
                         </div>
                       </div>
@@ -462,14 +428,14 @@
                       data-aos="fade-left"
                       data-aos-delay="200"
                     >
-                      Experience
+                      nổi bật
                     </div>
                     <div
                       class="heading"
                       data-aos="fade-left"
                       data-aos-delay="200"
                     >
-                      Work Experience
+                      Kinh nghiệm làm việc
                     </div>
                     <div class="experience">
                       <div
@@ -484,23 +450,36 @@
                         <div class="experience__right">
                           <div class="experience__top">
                             <div class="experience__name">
-                              Derasoft Co., Ltd
+                              Công ty TNHH Phần Mềm Kỷ Nguyên Số (Derasoft Co.,
+                              Ltd)
                             </div>
                             <div class="experience__time">2020- 2024</div>
                           </div>
                           <div class="experience__body">
                             <p>
                               <strong
-                                ><i
-                                  >Frontend Developer (HTML, CSS, JavaScript)</i
-                                >
+                                ><i>Lập trình viên JavaScript.</i>
                               </strong>
                             </p>
                             <p>
-                              • Optimized page loading speed and enhanced UX/UI.
+                              - Phát triển và duy trì các ứng dụng web bằng
+                              JavaScript (ES6+), đảm bảo sản phẩm hoạt động ổn
+                              định, hiệu quả và dễ bảo trì.
                             </p>
                             <p>
-                              • Ensured timely and high-quality project delivery
+                              - Tối ưu hóa hiệu suất ứng dụng, tăng tốc độ tải
+                              trang và xử lý lỗi kỹ thuật, nâng cao trải nghiệm
+                              người dùng (UX).
+                            </p>
+                            <p>
+                              - Phối hợp hiệu quả với đội ngũ phát triển, đảm
+                              bảo chất lượng mã nguồn và hoàn thành dự án đúng
+                              hạn.
+                            </p>
+                            <p>
+                              - Đóng góp vào thành công của nhiều dự án, nổi bật
+                              với việc cải thiện tốc độ tải trang lên đến 30% và
+                              tối ưu giao diện người dùng (UI)
                             </p>
                           </div>
                         </div>
@@ -517,28 +496,31 @@
                         <div class="experience__right">
                           <div class="experience__top">
                             <div class="experience__name">
-                              Bluesky Vietnam Technology Joint Stock Company
+                              CÔNG TY CỔ PHẦN CÔNG NGHỆ BLUESKY VIỆT NAM
                             </div>
                             <div class="experience__time">2023- 2024</div>
                           </div>
                           <div class="experience__body">
                             <p>
-                              <strong
-                                ><i>Frontend Developer (React JS, Next JS)</i>
+                              <strong>
+                                <i>Lập trình viên React JS, Next Js.</i>
                               </strong>
                             </p>
                             <p>
-                              • Improved React.js and Next.js skills through
-                              learning and practical application.
+                              - Nâng cao chuyên môn với React.js và Next.js
+                              thông qua học tập chuyên sâu và ứng dụng thực tế
+                              vào các dự án.
                             </p>
                             <p>
-                              • Developed new features and resolved technical
-                              issues in e-commerce projects.
+                              - Tham gia phát triển các ứng dụng thương mại điện
+                              tử, triển khai tính năng mới, xử lý lỗi kỹ thuật
+                              và đảm bảo sản phẩm hoạt động ổn định, góp phần
+                              quan trọng vào thành công chung.
                             </p>
-
                             <p>
-                              • Contributed to designing intuitive UI and
-                              improving high-quality UX.
+                              - Thiết kế và tối ưu giao diện người dùng (UI)
+                              trực quan, hấp dẫn, đồng thời nâng cao trải nghiệm
+                              tương tác (UX) để đáp ứng nhu cầu người dùng.
                             </p>
                           </div>
                         </div>
@@ -553,14 +535,14 @@
                       data-aos="fade-left"
                       data-aos-delay="200"
                     >
-                      Recent Work
+                      Phần chính
                     </div>
                     <div
                       class="heading"
                       data-aos="fade-left"
                       data-aos-delay="200"
                     >
-                      My project
+                      Các dự án nổi bật
                     </div>
                     <div
                       class="project"
@@ -583,7 +565,6 @@
                                 src="./img/project-a&c.jpg"
                                 alt="project"
                                 class="project__image"
-                                loading="lazy"
                               />
                               <div class="project__body">
                                 <div class="project__name effect effect--1">
@@ -605,7 +586,6 @@
                                 src="./img/project-thanh-an.jpg"
                                 alt="project"
                                 class="project__image"
-                                loading="lazy"
                               />
                               <div class="project__body">
                                 <div class="project__name effect effect--1">
@@ -627,7 +607,6 @@
                                 src="./img/project-sen-viet.jpg"
                                 alt="project"
                                 class="project__image"
-                                loading="lazy"
                               />
                               <div class="project__body">
                                 <div class="project__name effect effect--1">
@@ -649,7 +628,6 @@
                                 src="./img/project-thuan-minh.jpg"
                                 alt="project"
                                 class="project__image"
-                                loading="lazy"
                               />
                               <div class="project__body">
                                 <div class="project__name effect effect--1">
@@ -672,7 +650,6 @@
                                 src="./img/project-an-vi.jpg"
                                 alt="project"
                                 class="project__image"
-                                loading="lazy"
                               />
                               <div class="project__body">
                                 <div class="project__name effect effect--1">
@@ -694,7 +671,6 @@
                                 src="./img/project-atlas.jpg"
                                 alt="project"
                                 class="project__image"
-                                loading="lazy"
                               />
                               <div class="project__body">
                                 <div class="project__name effect effect--1">
@@ -716,7 +692,6 @@
                                 src="./img/project-nuskin.jpg"
                                 alt="project"
                                 class="project__image"
-                                loading="lazy"
                               />
                               <div class="project__body">
                                 <div class="project__name effect effect--1">
@@ -742,7 +717,6 @@
                                 src="./img/project-todo-list.jpg"
                                 alt="project"
                                 class="project__image"
-                                loading="lazy"
                               />
                               <div class="project__body">
                                 <div class="project__name effect effect--1">
@@ -766,14 +740,14 @@
                       data-aos="fade-left"
                       data-aos-delay="200"
                     >
-                      Get in Touch
+                      Kết nối
                     </div>
                     <div
                       class="heading"
                       data-aos="fade-left"
                       data-aos-delay="200"
                     >
-                      Contact
+                      Thông tin liên hệ
                     </div>
                     <div
                       class="contact"
@@ -796,14 +770,14 @@
                         <div class="contact__content">090 1800 274</div>
                       </a>
                       <a
-                        href="./Nguyen-Van-Cuong--EN.pdf"
+                        href="./Nguyen-Van-Cuong-VN.pdf"
                         download=""
                         class="contact__item"
                       >
                         <div class="contact__icon">
                           <i class="fa-solid fa-file-pdf"></i>
                         </div>
-                        <div class="contact__content">Download CV</div>
+                        <div class="contact__content">Tải CV</div>
                       </a>
                     </div>
                   </div>
@@ -814,24 +788,10 @@
         </div>
       </main>
     </div>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
-      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"
-      integrity="sha512-bxzECOBohzcTcWocMAlNDE2kYs0QgwGs4eD8TlAN2vfovq13kfDfp95sJSZrNpt0VMkpP93ZxLC/+WN/7Trw2g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/slick.js"></script>
+    <script src="./js/fancybox.js"></script>
+    <script src="./js/library.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="js/main.js"></script>
   </body>

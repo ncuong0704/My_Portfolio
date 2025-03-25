@@ -61,15 +61,19 @@
         text-align: center;
     }
     &__avatar {
-        width: 150px;
-        height: 150px;
+        width: 180px;
+        height: 180px;
         border-radius: 50%;
         overflow: hidden;
         margin: auto;
+        position: relative;
         img {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain;
         }
     }
     &__name {
@@ -125,9 +129,31 @@
             }
         }
     }
+    &__language{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__icon{
+        display: flex;
+        margin: 4px;
+        img{
+            width: 32px;
+            height: 32px;
+            object-fit: contain;
+            border: 2px solid #e6e6e6;
+            border-radius: 50%;
+        }
+        &.active{
+            img{
+                border-color: $blue-color;
+            }
+        }
+    }
     &__copyright {
         font-size: 14px;
         text-align: center;
+        margin-top: 30px;
     }
 }
 .fullpage {
@@ -143,9 +169,42 @@
     }
 }
 .home {
+    height: 100vh;
+    overflow: hidden;
+    .slick-dots{
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        padding-left: 0;
+        li{
+            margin: 3px;
+            button{
+                font-size: 0;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                display: block;
+                padding: 0;
+                margin: 0;
+                border: 1px solid $bg-grey-color;
+                cursor: pointer;
+            }
+            &.slick-active{
+                button{
+                    background-color: $blue-color;
+                }
+            }
+        }
+    }
     &__slide {
         position: relative;
         height: 100vh;
+        
     }
     &__bg {
         position: absolute;
@@ -162,9 +221,9 @@
         top: 50%;
         transform: translateY(-50%);
         left: 40px;
-        width: 360px;
+        width: 400px;
         @include tablet-mobile {
-            width: calc(60% - 24px);
+            width: 56%;
             left: 24px;
         }
         .effect {
@@ -418,6 +477,7 @@
 
 .project {
     margin-top: 40px;
+    height: 1100px;
     &__top {
         display: flex;
         margin-bottom: 30px;
